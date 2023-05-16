@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--gilda-fp);
+}
+
+:root {
+    --primary-grey:#DADADA;
+    --primary-yellow:#FCE258;
+    --primary-green:#32803F;
+    --white:#FFFFFF;
+    --secondary-grey:#989898;
+    --gilda-fp:'Gilda Display', serif;
+    --dark-grey:#444444;
+    --light-grey:#E2DBDB;
+
+}
+
+
+/**************************************
+******* Common css start here **** ****
+**************************************/
+.container{
+    margin: auto;
+}
+
+/********* Common css end here ********/
+
+
+
+/**************************************
+**** Header section css start here **** 
+**************************************/
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.search-bar-wrapper {
+text-align: center;
+}
+
+.search-bar-wrapper button {
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.header-input {
+    position: relative;
+    margin-top: 15px;
+}
+
+.header-input input {
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: var(--primary-grey);
+}
+
+.header-input span{
+    position: absolute;
+    right: 2%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+.header-btn-grp {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: var(--primary-green);
+}
+
+.header-icon-grp {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: end;
+    color: var(--secondary-grey);
+}
+
+
+.header-icon-grp .user{
+    background-color: var(--primary-green);
+    display: inline-block;
+    height: 50px;
+    opacity: 0.7;
+    position: relative;
+    border-radius: 50px;
+    width: 50px;
+}
+
+.header-icon-grp .user span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+    transform: translate(-50%,-50%);
+}
+
+
+/**** Header section css end here ****/
+
+
+
+/**************************************
+**** Nav bar css start here **** 
+**************************************/
+.navbar-sec {
+    background-color: var(--primary-green);
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.navbar-wrapper {
+    color: var(--white);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.navbar-wrapper span:hover {
+    cursor: pointer;
+    background-color: var(--primary-yellow);
+    color: var(--dark-grey);
+}
+/**** Nav bar css end here ****/
+
+
+
+/**************************************
+**** Home Banner css start here **** 
+**************************************/
+#myCarousel {
+    padding-top: 100px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: var(--primary-green);
+}
+
+.home-banner-item img{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Home banner css end here */
+
+
+
+/**************************************
+**** Categories css start here **** 
+**************************************/
+.categories-sec {
+    padding: 40px 0;
+}
+
+.categories-sec hr {
+    background-color: var(--light-grey);
+}
+
+.categories-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.categories-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-card p{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dark-grey);
+}
+
+
+/* Categories css end here */
+
+
+/**************************************
+**** Featured product css start here **** 
+**************************************/
+.featured-item-sec {
+    padding: 40px 0;
+}
+
+.featured-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.featured-img {
+    width: 450px;
+    height: 300px;
+}
+
+.featured-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* featured product css end here */
+
+
+
+/**************************************
+**** Multi category css start here **** 
+**************************************/
+.multi-category-title span{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-grey);
+    margin-right: 30px;
+}
+
+.multi-category-title .ml-active {
+    color: black;
+    padding-bottom: 15px;
+    border-bottom: 2px solid red;
+}
+
+.multi-category-card {
+    width: 60%;
+    margin: auto;
+}
+
+
+#multi-categories-carousel .owl-item img{
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: cover;
+}
+
+#multi-categories-carousel .owl-dots {
+    display: none;
+}
+
+#multi-categories-carousel .owl-nav {
+    position: absolute;
+    top: -20%;
+    right: 20px;
+    color: var(--secondary-grey);
+}
+
+#multi-categories-carousel .owl-nav button {
+    font-size: 4em;
+    margin-right: 40px;
+}
+
+.ml-card-top {
+    position: relative;
+}
+
+.ml-card-top .discount {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #45aa56;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 22%;
+    left: 10px;
+}
+
+.ml-card-bottom {
+    text-align: center;
+}
+
+.ml-card-bottom p:first-child{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.ml-card-bottom p:last-child span:first-child {
+    color: var(--secondary-grey);
+    font-size: 18px;
+}
+
+.ml-card-bottom p:last-child span:last-child {
+    color: var(--primary-green);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Multi Category css end here */
+
+
+/**************************************
+**** Assurance section css start here **** 
+**************************************/
+.assurance-sec {
+    padding: 40px;
+}
+
+.assurance-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid var(--primary-green);
+    border-radius: 40px;
+    padding: 40px 20px;
+}
+
+.assurance-card {
+    text-align: center;
+    font-size: 18px;
+}
+
+.assurance-card img {
+    height: 50px;
+}
+
+.assurance-title{
+    padding-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.assurance-desc {
+    color: var(--secondary-grey);
+}
+
+
+/* Assurance section css end here */
+
+
+
+
+
+/**************************************
+**** Media Query css start here **** 
+**************************************/
+@media screen and (min-width:1800px) {
+    .container{
+        max-width: 1620px !important;
+    }
+}
+
+@media screen and (max-width:1800px) and (min-width:1074px) {
+    .container{
+        max-width: 90vw;
+    }
+    
+}
+
+@media screen and (max-width:1074px) {
+    .container{
+        max-width: 966px;
+    }
+    
+}
